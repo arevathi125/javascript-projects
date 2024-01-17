@@ -4,7 +4,18 @@ let num = 1001;
 console.log(num.length);
 
 //Use type conversion to print the length (number of digits) of an integer.
+let word = String(num);
+console.log(word.length);
 
 //Follow up: Print the number of digits in a DECIMAL value (e.g. num = 123.45 has 5 digits but a length of 6).
+let num1=String(123.45).replace(".","");
+console.log(num1.length);
 
 //Experiment! What if num could be EITHER an integer or a decimal?  Add an if/else statement so your code can handle both cases.
+if(String(number).includes('.')){
+    let number1 = String(number).replace(".","");
+    console.log(number1.length);
+}
+else{
+    console.log(String(number).length);
+}

@@ -69,7 +69,7 @@
   //MakeIsoscelesTriangle(height) function calling
    //console.log(makeIsoscelesTriangle(5));
 
-   // makeDiamond(height) function
+   // 7. makeDiamond(height) function
      function makeDiamond(height){
          return diamond = makeIsoscelesTriangle(height).split('').reverse().join('');
        

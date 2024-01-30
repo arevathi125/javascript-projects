@@ -44,7 +44,7 @@ console.log(sortedArrayFunction(nums2));
 console.log(sortedArrayFunction(nums3));
 
 //Bonus Part
-
+     //Type 1
     function sortedArrayRecursion(arr, sortArray = []){
         if (arr.length === 0){
         return sortArray;
@@ -56,7 +56,22 @@ console.log(sortedArrayFunction(nums3));
           return sortedArrayRecursion(arr, sortArray);
       }
     }
-
+     
+   /* //Type 2
+    let sortArray = [];
+    function sortedArrayRecursion(arr){
+        if (arr.length === 0){
+        let finalArray = sortArray;
+       sortArray =[];
+   return finalArray;
+      }
+      else {
+        let min = findMinValue(arr);
+          sortArray.push(min);
+          arr.splice(arr.indexOf(min) , 1);
+          return sortedArrayRecursion(arr);
+      }
+    }  */
          
     let nums4 = [5, 10, 2, 42];
     let nums5 = [-2, 0, -10, -44, 5, 3, 0, 3];

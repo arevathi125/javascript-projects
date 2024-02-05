@@ -77,11 +77,13 @@ let lizard = {
 // Start an animal race!
   let fitnessTest = function(arr){
        let newArr =[];
-       let numOfSteps = 0;
-       let count = 0;
+       let numOfSteps ;
+       let count ;
        for (let i = 0; i < arr.length; i++){
+         numOfSteps = 0;
+         count = 0;
          while (numOfSteps < 20){
-            numOfSteps = numOfSteps + arr[i].move();
+            numOfSteps += arr[i].move();
             count++;
        }
        newArr.push(`${arr[i].name} took ${count} turns to take 20 steps.`);

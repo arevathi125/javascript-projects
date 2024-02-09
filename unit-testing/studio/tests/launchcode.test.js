@@ -25,47 +25,47 @@ describe("Testing launchcode", function(){
   });
 
   test("When passed a number that is ONLY divisible by 2, return 'Launch!'", () => {
-    let result = launchcode.launchOutput(2);
+    let result = launchcode.launchcode.launchOutput(2);
     expect(result).toBe('Launch!');
   });
 
   test("When passed a number that is ONLY divisible by 3, return 'Code!'", () => {
-    let result = launchcode.launchOutput(9);
+    let result = launchcode.launchcode.launchOutput(9);
     expect(result).toBe('Code!');
   });
 
   test("When passed a number that is ONLY divisible by 5, return 'Rocks!'", () => {
-    let result = launchcode.launchOutput(5);
+    let result = launchcode.launchcode.launchOutput(5);
     expect(result).toBe('Rocks!');
   });
 
   test("When passed a number that is divisible by 2 AND 3, return 'LaunchCode!'", () => {
-    let result = launchcode.launchOutput(6);
+    let result = launchcode.launchcode.launchOutput(6);
     expect(result).toBe('LaunchCode!');
   });
 
   test("When passed a number that is divisible by 3 AND 5, return 'Code Rocks!'", () => {
-    let result = launchcode.launchOutput(15);
+    let result = launchcode.launchcode.launchOutput(15);
     expect(result).toBe('Code Rocks!');
   });
 
   // test("When passed a number that is divisible by 2 AND 5, return 'Launch Rocks!'", () => {
-  //   let result = launchcode.launchOutput(10);
+  //   let result = launchcode.launchcode.launchOutput(10);
   //   expect(result).toBe('Launch Rocks!');
   // });
 
   test("When passed a number that is divisible by 2 AND 5, return 'Launch Rocks! (CRASH!!!!)'", () => {
-    let result = launchcode.launchOutput(10);
+    let result = launchcode.launchcode.launchOutput(10);
     expect(result).toBe('Launch Rocks! (CRASH!!!!)');
   });
 
   test("When passed a number that is divisible by 2, 3, AND 5, return 'LaunchCode Rocks!'", () => {
-    let result = launchcode.launchOutput(30);
+    let result = launchcode.launchcode.launchOutput(30);
     expect(result).toBe('LaunchCode Rocks!');
   });
 
   test("When passed a number that is NOT divisible by 2, 3, AND 5, return 'Rutabagas! That doesn't work.'", () => {
-    let result = launchcode.launchOutput(-1);
+    let result = launchcode.launchcode.launchOutput(-1);
     expect(result).toBe("Rutabagas! That doesn't work.");
   });
 

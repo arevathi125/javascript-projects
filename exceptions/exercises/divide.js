@@ -5,3 +5,19 @@
 // However, if the denominator is zero you should throw the error, "Attempted to divide by zero."
 
 // Code your divide function here:
+
+    const input = require('readline-sync');
+
+function divide(numer, denom){
+    // result = numer / denom;
+   if (denom === 0){
+    throw Error('Attempted to divide by zero.');
+   }
+    return numer / denom; 
+}
+
+   numerator = input.question("Enter the numerator value : ");
+   denominator = input.question("Enter the denominator value : ");
+
+   console.log(divide(numerator , denominator));
+

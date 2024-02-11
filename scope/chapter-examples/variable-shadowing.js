@@ -16,3 +16,12 @@ let name = input.question("Please enter your name: ");
 hello(name);
 doubleName(name);
 console.log(name);
+
+// let a = 0;
+
+// function myFunction() {
+//     let a = 10;
+//     return a;
+// }
+
+// console.log(a);

@@ -16,8 +16,10 @@ function divide(numer, denom){
     return numer / denom; 
 }
 
-   numerator = input.question("Enter the numerator value : ");
-   denominator = input.question("Enter the denominator value : ");
+console.log(divide(5, 0));
 
-   console.log(divide(numerator , denominator));
+//    numerator = input.question("Enter the numerator value : ");
+//    denominator = input.question("Enter the denominator value : ");
+
+  // console.log(divide(numerator , denominator));
 

@@ -28,14 +28,18 @@
             let action = actions[selectedEngine.value];
 			form.setAttribute('action', action);
 
-			if (query.value === ""){
-				alert("Please give some input to search");
-				event.preventDefault();
-			}
+			// if (query.value === ""){
+			// 	alert("Please give some input to search");
+			// 	event.preventDefault();
+			// }
 
-			 if (!selectedEngine){
-				alert("Please select one option");
-				event.preventDefault();
+			//  if (!selectedEngine){
+			// 	alert("Please select one option");
+			// 	event.preventDefault();
+			// }
+
+			if (query.value === "" || !selectedEngine){
+				alert("All fields required");
 			}
           
 		        }

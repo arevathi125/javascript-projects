@@ -12,7 +12,8 @@ window.addEventListener("load",function(){
         let boosterCountInput = document.querySelector("input[name=boosterCount]");
         let windRatingInput = document.querySelector("input[name=windRating]");
         let productionServersInput = document.querySelector("input[name=productionServers]");
-        if(testNameInput.value === "" || testDateInput.value === ""){
+        if(testNameInput.value === "" || testDateInput.value === "" || rocketTypeInput.value === "" ||
+            boosterCountInput.value === "" || windRatingInput.value === "" || productionServersInput.value === ""){
            alert("All fields required");
         }
        // window.alert("test");
